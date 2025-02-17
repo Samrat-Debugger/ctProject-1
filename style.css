@@ -49,7 +49,9 @@ nav {
 }
 
 .menu-left {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
     align-items: center;
 }
 
@@ -73,7 +75,10 @@ nav {
 
 .menu-left a:hover {
     color: #96BB7C;
+}
 
+.menu-left i {
+    display: none;
 }
 
 
@@ -285,7 +290,7 @@ a {
 }
 
 .pencil-video {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .pencil-video iframe {
@@ -558,7 +563,7 @@ a {
 
 .workers {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 100px 0;
 
 }
@@ -693,7 +698,7 @@ footer a {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
-    /* align-items: center; */
+
 
 }
 
@@ -736,6 +741,8 @@ footer a {
 
 
 /* responsive design */
+
+
 @media screen and (max-width:1280px) {
 
     .menu-left h1 {
@@ -753,7 +760,7 @@ footer a {
     }
 
     .hero-left,
-    .packages,
+
     .advices {
         margin-left: 60px;
     }
@@ -774,14 +781,65 @@ footer a {
         margin-right: 20px;
     }
 
+    .packages {
+        margin-left: 40px;
+    }
+
+    .packages h3 {
+        font-size: 35px;
+    }
+
     .pencil-video iframe {
-        margin-left: 60px;
+
+        margin-right: 40px;
+        width: 420px;
     }
 }
 
-@media screen and(max-width:1024px) {}
+@media screen and (max-width:1024px) {
+
+    .pencil-photos,
+    .cards {
+        grid-template-columns: auto auto auto;
+        align-content: center;
+        row-gap: 40px;
+
+
+    }
+}
+
 
 @media screen and (max-width: 800px) {
+    .menu-left {}
+
+    .menu-left h1 {
+        font-size: 18px;
+        margin-left: 55px;
+    }
+
+    .menu-left div a {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .menu-left>div {}
+
+    .menu-right a {
+        margin-right: -10px;
+    }
+
+    .menu-right button {
+        margin-right: 20px;
+    }
+
+    .boy-background {
+        height: 480px;
+    }
+
+    .hero-right img {
+        height: 458px;
+    }
+
     .hero-left p {
 
         font-size: 12px;
@@ -796,6 +854,12 @@ footer a {
 
     .hero-right img {
         max-width: 450px;
+    }
+
+    .pencil-video iframe {
+        margin-right: -39px;
+        width: 500px;
+        height: 350px;
     }
 
     .pencil-photos,
@@ -828,10 +892,7 @@ footer a {
         flex-direction: column-reverse;
     }
 
-    iframe {
-        width: 500px;
-        height: 350px;
-    }
+
 
     .packages {
         display: flex;
@@ -857,6 +918,50 @@ footer a {
 
 @media screen and (max-width:768px) {
 
+
+    .menu-left h1 {
+        font-size: 24px;
+        margin-left: 60px;
+    }
+
+    .menu-left div {
+        display: none;
+
+
+    }
+
+    .menu-left i {
+        margin-left: 10px;
+        display: inline;
+    }
+
+    .hero-left h1 {
+        font-size: 25px;
+    }
+
+    .hero-left button {
+        font-size: 8px;
+        padding: 4px 5px;
+    }
+
+    .hero-left a {
+        font-size: 10px;
+        padding: 4px 5px;
+    }
+
+
+    .hero-right img {
+        height: 330px;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+
+    .boy-background {
+        height: 380px;
+
+    }
+
     .quality {
         flex-direction: column;
     }
@@ -870,13 +975,140 @@ footer a {
     .education>p {
         text-align: center;
     }
+
+    .advices {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer {
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width:600px) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+    nav {
+        margin-top: -20px;
+    }
 
+    .menu-left h1 {
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .hero-left h1 {
+        font-size: 22px;
+    }
+
+    .hero-right img {
+        height: 280px;
+        width: 250px;
+        margin-top: 0px;
+    }
+
+    .boy-background {
+        height: 300px;
+
+    }
+
+    .advices h3 {
+        font-size: 30px;
+    }
+
+    .advices p {
+        font-size: 12px;
+    }
+
+    .girl img {
+        width: 400px;
+    }
+
+    .workers p {
+        font-size: 10px;
+    }
+
+    .pencil-video iframe {
+        width: 400px;
+    }
+
+    .cards {
+        grid-template-columns: auto auto;
+
+    }
+
+    .footer {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .menu-left i {
+        margin-left: 5px;
+    }
+
+    .menu-left h1 {
+        font-size: 17px;
+    }
+
+    .menu-right a {
+        font-size: 13px;
+        margin-right: 10px;
+    }
+
+    .menu-right button {
+        margin: 0;
+        padding: 2px 4px;
+        font-size: 10px;
+    }
+
+    .hero-left {
+        margin-left: 20px;
+    }
+
+    .hero-right img {
+        height: 200px;
+        width: 150px;
+    }
+
+    .hero-right img {
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .boy-background {
+        height: 200px;
+    }
+
+    .girl img {
+        width: 300px;
+    }
+
+    .education h3,
+    .packages h3,
+    .advices h3 {
+        font-size: 25px;
+    }
+
+    .pencil-video iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+
+
+
+    .pencil-photos,
+    .cards,
+    .workers,
+    .footer,
+    .bottomFooter {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .bottomFooter {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
