@@ -422,8 +422,10 @@ a {
 
 
 .p-parent {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     justify-content: space-around;
+    grid-gap: 50px;
     margin-top: 80px;
 }
 
@@ -795,6 +797,28 @@ footer a {
 
 @media screen and (max-width:1024px) {
 
+    .hero-left>button,
+    .hero-left>a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .menu-left div a {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+
+    .menu-right button {
+        margin-right: 20px;
+    }
+
+    .hero-left button,
+    a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
     .pencil-photos,
     .cards {
         grid-template-columns: auto auto auto;
@@ -803,11 +827,16 @@ footer a {
 
 
     }
+
+    .p-parent {
+
+        grid-template-columns: auto auto;
+    }
 }
 
 
 @media screen and (max-width: 800px) {
-    .menu-left {}
+
 
     .menu-left h1 {
         font-size: 18px;
@@ -815,19 +844,11 @@ footer a {
     }
 
     .menu-left div a {
-        margin-right: 10px;
+
         font-size: 12px;
     }
 
-    .menu-left>div {}
 
-    .menu-right a {
-        margin-right: -10px;
-    }
-
-    .menu-right button {
-        margin-right: 20px;
-    }
 
     .boy-background {
         height: 480px;
@@ -902,8 +923,7 @@ footer a {
     }
 
     .p-parent {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: auto;
 
     }
 
