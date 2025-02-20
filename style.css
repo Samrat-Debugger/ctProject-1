@@ -24,6 +24,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px;
 }
 
 .hero {
@@ -49,9 +50,7 @@ nav {
 }
 
 .menu-left {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
+    display: flex;
     align-items: center;
 }
 
@@ -744,19 +743,7 @@ footer a {
 
 @media screen and (max-width:1280px) {
 
-    .menu-left h1 {
 
-
-        margin-left: 66px;
-    }
-
-    .menu-right a {
-        margin-right: 10px;
-    }
-
-    .menu-right button {
-        margin-right: 100px;
-    }
 
     .hero-left,
 
@@ -797,24 +784,17 @@ footer a {
 
 @media screen and (max-width:1024px) {
 
-    .hero-left>button,
-    .hero-left>a {
+    .hero-left>button {
         padding: 8px 10px;
         font-size: 14px;
     }
 
     .menu-left div a {
-        margin-right: 10px;
+
         font-size: 12px;
     }
 
-
-    .menu-right button {
-        margin-right: 20px;
-    }
-
-    .hero-left button,
-    a {
+    .hero-left button {
         padding: 8px 10px;
         font-size: 14px;
     }
@@ -835,6 +815,26 @@ footer a {
 }
 
 
+@media screen and (max-width: 906px) {
+
+    .menu-left h1 {
+        font-size: 24px;
+        margin-left: 60px;
+    }
+
+    .menu-left div {
+        display: none;
+
+
+    }
+
+    .menu-left i {
+        margin-left: 10px;
+        display: inline;
+    }
+}
+
+
 @media screen and (max-width: 800px) {
 
 
@@ -848,7 +848,9 @@ footer a {
         font-size: 12px;
     }
 
-
+    .menu-right button {
+        margin-left: 20px;
+    }
 
     .boy-background {
         height: 480px;
@@ -894,9 +896,6 @@ footer a {
         margin-left: 15px;
     }
 
-    .menu-right a {
-        margin-left: 35px;
-    }
 
     .menu-right button {
         padding: 10px 15px;
@@ -936,21 +935,6 @@ footer a {
 @media screen and (max-width:768px) {
 
 
-    .menu-left h1 {
-        font-size: 24px;
-        margin-left: 60px;
-    }
-
-    .menu-left div {
-        display: none;
-
-
-    }
-
-    .menu-left i {
-        margin-left: 10px;
-        display: inline;
-    }
 
     .hero-left h1 {
         font-size: 25px;
@@ -1007,11 +991,14 @@ footer a {
 @media screen and (max-width:600px) {
     nav {
         margin-top: -20px;
+        padding: 0 20px;
     }
+
+
 
     .menu-left h1 {
         font-size: 20px;
-        margin-left: 0px;
+        margin-left: 20px;
     }
 
     .hero-left h1 {
