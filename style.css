@@ -31,6 +31,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
 
 .hero-right img {
@@ -745,11 +746,6 @@ footer a {
 
 
 
-    .hero-left,
-
-    .advices {
-        margin-left: 60px;
-    }
 
     .boy-background {
         height: 600px;
@@ -784,20 +780,13 @@ footer a {
 
 @media screen and (max-width:1024px) {
 
-    .hero-left>button {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
 
     .menu-left div a {
 
         font-size: 12px;
     }
 
-    .hero-left button {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
+
 
     .pencil-photos,
     .cards {
@@ -832,6 +821,24 @@ footer a {
         margin-left: 10px;
         display: inline;
     }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-left h1,
+    .hero-left h5 {
+
+        margin-bottom: 0;
+    }
+
+
+
+
 }
 
 
@@ -940,16 +947,11 @@ footer a {
         font-size: 25px;
     }
 
-    .hero-left button {
+    .hero-left button,
+    .hero-left a {
         font-size: 8px;
         padding: 4px 5px;
     }
-
-    .hero-left a {
-        font-size: 10px;
-        padding: 4px 5px;
-    }
-
 
     .hero-right img {
         height: 330px;
@@ -1006,8 +1008,8 @@ footer a {
     }
 
     .hero-right img {
-        height: 280px;
-        width: 250px;
+        height: auto;
+        width: 100%;
         margin-top: 0px;
     }
 
@@ -1074,15 +1076,7 @@ footer a {
         font-size: 10px;
     }
 
-    .hero-right img {
-        height: 200px;
-        width: 150px;
-    }
 
-    .hero-right img {
-        height: 200px;
-        margin-bottom: 50px;
-    }
 
     .boy-background {
         height: 200px;
