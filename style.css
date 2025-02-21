@@ -265,8 +265,8 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 0;
-    margin: 0 auto;
+    padding: 0 20px;
+    margin: 40px auto;
 }
 
 .packages h3 {
@@ -763,17 +763,11 @@ footer a {
         margin-right: 20px;
     }
 
-    .packages {
-        margin-left: 40px;
-    }
-
     .packages h3 {
         font-size: 35px;
     }
 
     .pencil-video iframe {
-
-        margin-right: 40px;
         width: 420px;
     }
 }
@@ -833,7 +827,12 @@ footer a {
     .hero-left h1,
     .hero-left h5 {
 
+
         margin-bottom: 0;
+    }
+
+    .approdable {
+        flex-direction: column-reverse;
     }
 
 
@@ -912,9 +911,7 @@ footer a {
         text-align: center;
     }
 
-    .approdable {
-        flex-direction: column-reverse;
-    }
+
 
 
 
@@ -943,13 +940,15 @@ footer a {
 
 
 
+
+
     .hero-left h1 {
-        font-size: 25px;
+        font-size: 35px;
     }
 
     .hero-left button,
     .hero-left a {
-        font-size: 8px;
+        font-size: 12px;
         padding: 4px 5px;
     }
 
@@ -1004,7 +1003,7 @@ footer a {
     }
 
     .hero-left h1 {
-        font-size: 22px;
+        font-size: 35px;
     }
 
     .hero-right img {
