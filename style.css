@@ -240,6 +240,7 @@ a {
 .education h3 {
     color: #252B42;
     font-size: 40px;
+    text-align: center;
 }
 
 .education p {
@@ -599,7 +600,7 @@ i {
 
 
 .subscribe {
-    padding: 40px 0;
+    padding: 40px 20px;
     background-color: #FFF2F3;
 
 }
@@ -972,6 +973,7 @@ footer a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 400px;
     }
 
     .education>p {
@@ -1027,6 +1029,10 @@ footer a {
 
     .girl img {
         width: 400px;
+    }
+
+    .education {
+        text-align: center;
     }
 
     .workers p {
@@ -1106,6 +1112,16 @@ footer a {
     .bottomFooter {
         display: grid;
         grid-template-columns: auto;
+
+    }
+
+    .footer {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .contacts a {
+        justify-content: center;
     }
 
     .bottomFooter {
